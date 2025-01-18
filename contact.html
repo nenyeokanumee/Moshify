@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deploy your website in less than 60 seconds.">
+    <meta name="og:title" content="Moshify Deploy your website in less than 60 seconds">
+    <meta name="og:type" content="website">
+    <meta name="og:url" content="https://moshified.com">
+    <title>Contact Moshify - Go Online Today</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="/CSS/contact.css">
+</head>
+<body>
+    <header>
+        <nav class="nav collapsible">
+            <a class="nav__brand" href="/index.html">
+                <img src="/Images/logo.svg" alt="">
+            </a>
+            <svg class="icon icon--white nav__toggler">
+                <use xlink:href="images/sprite.svg#menu"></use>
+            </svg>
+            <ul class="list nav__list collapsible__content">
+                <li class="nav__item"><a href="#">Hosting</a></li>
+                <li class="nav__item"><a href="#">VPS</a></li>
+                <li class="nav__item"><a href="#">Domain</a></li>
+                <li class="nav__item"><a href="#">Pricing</a></li>
+                <li class="nav__item"><a href="/contact.html">Contact</a></li>
+            </ul>    
+        </nav>
+    </header>
+    <section class="block block--dark block--skewed-left hero">
+        <div class="container grid grid--1X2">
+            <header class="block__header hero__content">
+                <h1 class="block__heading">Contact Us today</h1>
+                <p class="hero__tagline">Tell us what you want and how you feel</p>
+            </header>
+            <img class="hero__image" src="/Images/contact us.png" alt="">
+        </div>
+    </section>
+
+    <section class="contact-container">
+        <h1>Leave Your Message With Us Here</h1>
+        <form class="contact-form">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" class="input" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" class="input" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" class="input" rows="5" placeholder="Type your message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block btn--stretched">Submit</button>
+        </form>
+    </section>
+
+
+    <footer class="block block--dark footer">
+        <div class="container grid footer__sections">
+            <section class="collapsible collapsible--expanded footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading block__heading footer__header">Products</h2>
+                    <img class="icon icon--white collapsible__chevron" src="/Images/chevron.svg" alt="">
+                </div>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <a href="#"><li>Website Hosting</li></a>
+                        <a href="#"><li>Free Automated Wordpress</li></a>
+                        <a href="#"><li>Migrations</li></a>
+                    </ul>
+                </div>
+            </section>
+    
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading block__heading footer__header">Company</h2>
+                    <img class="icon icon--white collapsible__chevron" src="/Images/chevron.svg" alt="">
+                </div>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <a href="#"><li>About</li></a>
+                        <a href="#"><li>Affiliates</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        
+                    </ul>
+                </div>
+            </section>
+    
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading block__heading footer__header">Support</h2>
+                    <img class="icon icon--white collapsible__chevron" src="/Images/chevron.svg" alt="">
+                </div>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <a href="/contact.html"><li>Contact</li></a>
+                        <a href="#"><li>Support Knowlege</li></a>
+                        <a href="#"><li>FAQ</li></a>
+                    </ul>
+                </div>
+            </section>
+    
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading block__heading footer__header">Domains</h2>
+                    <img class="icon icon--white collapsible__chevron" src="/Images/chevron.svg" alt="">
+                </div>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <a href="#"><li>Domian Checker</li></a>
+                        <a href="#"><li>Domian Transfer</li></a>
+                        <a href="#"><li>Free Domain</li></a>
+                    </ul>
+                </div>
+            </section>
+    
+            <div class="footer__brand">
+                <img src="/Images/logo.svg" alt="">
+                <!-- <p class="footer__copyright">Copyright 2025 Nenye Okanumee</p> -->
+                <p class="footer__copyright">&copy; <span id="current-year"></span> Nenye Okanumee. All rights reserved.</p>
+            </div>
+    
+        </div>
+    </footer>
+        
+        <script src="/js/main.js"></script>
+</body>
+</html>
