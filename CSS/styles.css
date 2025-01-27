@@ -709,6 +709,10 @@ a{
     transform: translateY(5px);
 }
 
+.fas{
+    color: var(--color-primary);
+}
+
 @media screen and (min-width:758px){
     .nav__toggler{
         display: none;
