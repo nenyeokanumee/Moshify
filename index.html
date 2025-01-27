@@ -1,372 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Deploy your website in less than 60 seconds.">
-    <meta name="og:title" content="Moshify Deploy your website in less than 60 seconds">
-    <meta name="og:type" content="website">
-    <meta name="og:url" content="https://moshified.com">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Deploy your website in less than 60 seconds." />
+    <meta
+      name="og:title"
+      content="Moshify Deploy your website in less than 60 seconds" />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="https://moshified.com" />
     <title>Moshify - Go Online Today</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
     <header>
-        <nav class="nav collapsible">
-            <a class="nav__brand" href="/index.html">
-                <img src="/Images/logo.svg" alt="">
-            </a>
-            <svg class="icon icon--white nav__toggler">
-                <use xlink:href="images/sprite.svg#menu"></use>
-            </svg>
-            <ul class="list nav__list collapsible__content">
-                <li class="nav__item"><a href="#">Hosting</a></li>
-                <li class="nav__item"><a href="#">VPS</a></li>
-                <li class="nav__item"><a href="#">Domain</a></li>
-                <li class="nav__item"><a href="#">Pricing</a></li>
-                <li class="nav__item"><a href="/contact.html">Contact</a></li>
-            </ul>    
-        </nav>
+      <nav class="nav collapsible">
+        <a class="nav__brand" href="/index.html">
+          <img src="/Images/logo.svg" alt="" />
+        </a>
+        <i class="fas fa-bars"></i>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Hosting</a></li>
+          <li class="nav__item"><a href="#">VPS</a></li>
+          <li class="nav__item"><a href="#">Domain</a></li>
+          <li class="nav__item"><a href="#">Pricing</a></li>
+          <li class="nav__item"><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <section class="block block--dark block--skewed-left hero">
-        <div class="container grid grid--1X2">
-            <header class="block__header hero__content">
-                <h1 class="block__heading">Cloud Hosting for You</h1>
-                <p class="hero__tagline">Deploy your website in less than 60 seconds</p>
-                <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
-            </header>
-            <img class="hero__image" src="/Images/banner.png" alt="">
-        </div>
+      <div class="container grid grid--1X2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Cloud Hosting for You</h1>
+          <p class="hero__tagline">
+            Deploy your website in less than 60 seconds
+          </p>
+          <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
+        </header>
+        <img class="hero__image" src="/Images/banner.png" alt="" />
+      </div>
     </section>
 
     <section class="block container block-domain">
-        <header class="block__header">
-            <h2>Starting at $9 per month</h2>
-            <p>Push your business to the next level with one of the most well-liked domain names</p>
-        </header>
-        <div class="input-group">
-            <input type="text" class="input" placeholder="Enter domain name here...">
-            <button class="btn btn--accent"><svg class="icon icon--white">
-                <use xlink:href="images/sprite.svg#search"></use>
-            </svg>Search</button>
-        </div>
-        <ul class="list block-domain__prices">
-            <li><span class="badge badge--secondary">.com $9 </span></li>
-            <li>.sg $10</li>
-            <li>.space $11</li>
-            <li>.info $14</li>
-            <li>.net $10</li>
-            <li>.xyz $10</li>
-        </ul>
+      <header class="block__header">
+        <h2>Starting at $9 per month</h2>
+        <p>
+          Push your business to the next level with one of the most well-liked
+          domain names
+        </p>
+      </header>
+      <div class="input-group">
+        <input
+          type="text"
+          class="input"
+          placeholder="Enter domain name here..." />
+        <button class="btn btn--accent">
+          <svg class="icon icon--white">
+            <use xlink:href="images/sprite.svg#search"></use></svg
+          >Search
+        </button>
+      </div>
+      <ul class="list block-domain__prices">
+        <li><span class="badge badge--secondary">.com $9 </span></li>
+        <li>.sg $10</li>
+        <li>.space $11</li>
+        <li>.info $14</li>
+        <li>.net $10</li>
+        <li>.xyz $10</li>
+      </ul>
     </section>
 
     <section class="block container block-plans">
-        <div class="grid grid--1X3">
-            <div class="plan">
-                <div class="card card--secondary">
-                    <header class="card__header">
-                        <h3 class="plan__name">Entry</h3>
-                        <span class="plan__price">$14</span>
-                        <span class="plan__billing-cycle">/month</span>
-                        <span class="badge badge--secondary badge--small">10% Off</span>
-                        <span class="plan__description">Easy start on the cloud</span>
-                    </header>
-                    <div class="card__body">
-                        <ul class="list list--tick">
-                            <li class="list__item">1 Website</li>
-                            <li class="list__item">Unlimited Bandwidth</li>
-                            <li class="list__item">10 GB SSD Sotrage</li>
-                            <li class="list__item">3 GB RAM</li>
-                        </ul>
-                        <button class="btn btn--outline btn--block">Buy Now</button>
-                    </div>
-                </div>
+      <div class="grid grid--1X3">
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% Off</span>
+              <span class="plan__description">Easy start on the cloud</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">1 Website</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">10 GB SSD Sotrage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
             </div>
-    
-            <div class="plan">
-                <div class="card card--primary plan--popular">
-                    <header class="card__header">
-                        <h3 class="plan__name">Entry</h3>
-                        <span class="plan__price">$30</span>
-                        <span class="plan__billing-cycle">/month</span>
-                        <span class="badge badge--primary badge--small">10% Off</span>
-                        <span class="plan__description">Best Cloud Experience</span>
-                    </header>
-                    <div class="card__body">
-                        <ul class="list list--tick">
-                            <li class="list__item">3 Websites</li>
-                            <li class="list__item">Unlimited Bandwidth</li>
-                            <li class="list__item">100 GB SSD Sotrage</li>
-                            <li class="list__item">30 GB RAM</li>
-                        </ul>
-                        <button class="btn btn--outline btn--block">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="plan">
-                <div class="card card--secondary">
-                    <header class="card__header">
-                        <h3 class="plan__name">Entry</h3>
-                        <span class="plan__price">$65</span>
-                        <span class="plan__billing-cycle">/month</span>
-                        <span class="badge badge--secondary badge--small">10% Off</span>
-                        <span class="plan__description">Business Plan</span>
-                    </header>
-                    <div class="card__body">
-                        <ul class="list list--tick">
-                            <li class="list__item">Unlimited Websites</li>
-                            <li class="list__item">Unlimited Bandwidth</li>
-                            <li class="list__item">Unlimited SSD Sotrage</li>
-                            <li class="list__item">300 GB RAM</li>
-                        </ul>
-                        <button class="btn btn--outline btn--block">Buy Now</button>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="plan">
+          <div class="card card--primary plan--popular">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$30</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--primary badge--small">10% Off</span>
+              <span class="plan__description">Best Cloud Experience</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">3 Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Sotrage</li>
+                <li class="list__item">30 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$65</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% Off</span>
+              <span class="plan__description">Business Plan</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">Unlimited SSD Sotrage</li>
+                <li class="list__item">300 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <article class="block container">
-        <header class="block__header">
-            <h2 class="block__heading" >Host on the Cloud to Keep Growing</h2>
-            <p>Unlock scalability, reliability, and speed. Empower your growth with seamless performance and 24/7 support</p>
-        </header>
-        <div class="grid grid--1X2 feature">
-            <div class="media feature__content">
-                <div class="media__body media__image">
-                    <span class="icon-container">
-                        <svg class="icon icon--primary">
-                            <use xlink:href="images/sprite.svg#easy"></use>
-                        </svg>
-                    </span>
-                    <h3 class="media__title feature__heading">Super Easy to Use</h3>
-                    <p>Our cloud hosting is super easy to use, perfect for everyone. From starting your website to managing it, everything is simple and clear. With easy tools and quick setup, you can focus on growing your website hassle-free.</p>
-                    <a href="#" class="link-arrow">Learn More</a>
-                </div>
-            </div>
-            <img class="feature__image" src="/Images/easy.jpg" alt="">
+      <header class="block__header">
+        <h2 class="block__heading">Host on the Cloud to Keep Growing</h2>
+        <p>
+          Unlock scalability, reliability, and speed. Empower your growth with
+          seamless performance and 24/7 support
+        </p>
+      </header>
+      <div class="grid grid--1X2 feature">
+        <div class="media feature__content">
+          <div class="media__body media__image">
+            <span class="icon-container">
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#easy"></use>
+              </svg>
+            </span>
+            <h3 class="media__title feature__heading">Super Easy to Use</h3>
+            <p>
+              Our cloud hosting is super easy to use, perfect for everyone. From
+              starting your website to managing it, everything is simple and
+              clear. With easy tools and quick setup, you can focus on growing
+              your website hassle-free.
+            </p>
+            <a href="#" class="link-arrow">Learn More</a>
+          </div>
         </div>
-        
-        <div class="grid grid--1X2 feature">
-            <div class="media feature__content">
-                <div class="media__body media__image">
-                    <span class="icon-container">
-                        <svg class="icon icon--primary">
-                            <use xlink:href="images/sprite.svg#computer"></use>
-                        </svg>
-                    </span>
-                    <h3 class="media__title feature__heading">Simply Fast Websites</h3>
-                    <p>We ensure simply fast websites that load quickly and run smoothly. No more waiting for pages to load. With powerful servers and optimized performance, your website will always be fast, keeping your visitors happy and engaged.</p>
-                    <a href="#" class="link-arrow">Learn More</a>
-                </div>
-            </div>
-            <img class="feature__image" src="/Images/fast.jpg" alt="">
+        <img class="feature__image" src="/Images/easy.jpg" alt="" />
+      </div>
+
+      <div class="grid grid--1X2 feature">
+        <div class="media feature__content">
+          <div class="media__body media__image">
+            <span class="icon-container">
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#computer"></use>
+              </svg>
+            </span>
+            <h3 class="media__title feature__heading">Simply Fast Websites</h3>
+            <p>
+              We ensure simply fast websites that load quickly and run smoothly.
+              No more waiting for pages to load. With powerful servers and
+              optimized performance, your website will always be fast, keeping
+              your visitors happy and engaged.
+            </p>
+            <a href="#" class="link-arrow">Learn More</a>
+          </div>
         </div>
-        
-        <div class="grid grid--1X2 feature">
-            <div class="media feature__content">
-                <div class="media__body media__image">
-                    <span class="icon-container">
-                        <svg class="icon icon--primary">
-                            <use xlink:href="images/sprite.svg#wordpress"></use>
-                        </svg>
-                    </span>
-                    <h3 class="media__title feature__heading">Wordpress Made Easy</h3>
-                    <p>WordPress is made easy with our cloud hosting. We provide simple one-click installs and easy management tools, so you can set up and run your WordPress site without any hassle.</p>
-                    <a href="#" class="link-arrow">Learn More</a>
-                </div>
-            </div>
-            <img class="feature__image" src="/Images/wordpress.jpg" alt="">
+        <img class="feature__image" src="/Images/fast.jpg" alt="" />
+      </div>
+
+      <div class="grid grid--1X2 feature">
+        <div class="media feature__content">
+          <div class="media__body media__image">
+            <span class="icon-container">
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#wordpress"></use>
+              </svg>
+            </span>
+            <h3 class="media__title feature__heading">Wordpress Made Easy</h3>
+            <p>
+              WordPress is made easy with our cloud hosting. We provide simple
+              one-click installs and easy management tools, so you can set up
+              and run your WordPress site without any hassle.
+            </p>
+            <a href="#" class="link-arrow">Learn More</a>
+          </div>
         </div>
-    
-        <div class="grid grid--1X2 feature">
-            <div class="media feature__content">
-                <div class="media__body media__image">
-                    <span class="icon-container">
-                        <svg class="icon icon--primary">
-                            <use xlink:href="images/sprite.svg#clock"></use>
-                        </svg>
-                    </span>
-                    <h3 class="media__title feature__heading">24/7 Expert Support</h3>
-                    <p>Our support team is always here to help you. Whether it's day or night, we are ready to assist with any issues or questions you have, ensuring your website runs smoothly and efficiently at all times.</p>
-                    <a href="#" class="link-arrow">Learn More</a>
-                </div>
-            </div>
-            <img class="feature__image" src="/Images/support.jpg" alt="">
+        <img class="feature__image" src="/Images/wordpress.jpg" alt="" />
+      </div>
+
+      <div class="grid grid--1X2 feature">
+        <div class="media feature__content">
+          <div class="media__body media__image">
+            <span class="icon-container">
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#clock"></use>
+              </svg>
+            </span>
+            <h3 class="media__title feature__heading">24/7 Expert Support</h3>
+            <p>
+              Our support team is always here to help you. Whether it's day or
+              night, we are ready to assist with any issues or questions you
+              have, ensuring your website runs smoothly and efficiently at all
+              times.
+            </p>
+            <a href="#" class="link-arrow">Learn More</a>
+          </div>
         </div>
+        <img class="feature__image" src="/Images/support.jpg" alt="" />
+      </div>
     </article>
 
     <section class="block block--dark block--skewed-right block-showcase">
-        <header class="block__header">
-            <h2 class="block__heading">User-friendly Control Panel</h2>
-        </header>
-        <div class="container grid grid--1X2">
-            <img class="block-showcase__image" src="/Images/ipad.png" alt="">
-            <ul class="list">
-                <li>
-                    <div class="media">
-                        <div class="media__image">
-                            <svg class="icon icon--primary">
-                                <use xlink:href="images/sprite.svg#settings"></use>
-                            </svg>
-                        </div>
-                        <div class="media__body">
-                            <h3 class="media__title block__heading">Easy Start & Managed Updates</h3>
-                            <p>Get started easily with quick setup and enjoy managed updates, keeping your site secure and up-to-date without you having to worry.</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="media">
-                        <div class="media__image">
-                            <svg class="icon icon--primary">
-                                <use xlink:href="images/sprite.svg#growth"></use>
-                            </svg>
-                        </div>
-                        <div class="media__body">
-                            <h3 class="media__title block__heading">Staging, GIT & WP-CLI</h3>
-                            <p>Use staging, GIT, and WP-CLI for smooth development. Test changes, manage versions, and control your WordPress site easily.</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="media">
-                        <div class="media__image">
-                            <svg class="icon icon--primary">
-                                <use xlink:href="images/sprite.svg#wordpress"></use>
-                            </svg>
-                        </div>
-                        <div class="media__body">
-                            <h3 class="media__title block__heading">Dynamic Caching & More</h3>
-                            <p>Boost your website speed with dynamic caching and more. Enjoy faster loading times and a smoother experience for visitors.</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
+      <header class="block__header">
+        <h2 class="block__heading">User-friendly Control Panel</h2>
+      </header>
+      <div class="container grid grid--1X2">
+        <img class="block-showcase__image" src="/Images/ipad.png" alt="" />
+        <ul class="list">
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#settings"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title block__heading">
+                  Easy Start & Managed Updates
+                </h3>
+                <p>
+                  Get started easily with quick setup and enjoy managed updates,
+                  keeping your site secure and up-to-date without you having to
+                  worry.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#growth"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title block__heading">
+                  Staging, GIT & WP-CLI
+                </h3>
+                <p>
+                  Use staging, GIT, and WP-CLI for smooth development. Test
+                  changes, manage versions, and control your WordPress site
+                  easily.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#wordpress"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title block__heading">
+                  Dynamic Caching & More
+                </h3>
+                <p>
+                  Boost your website speed with dynamic caching and more. Enjoy
+                  faster loading times and a smoother experience for visitors.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="block">
-        <header class="block__header">
-            <h2>What Our Customers are Saying</h2>
-            <p>Here’s what our customers are saying. We help websites grow and perform better every day!</p>
-        </header>
-        <div class="container">
-            <div class="card testimonial">
-                <div class="grid grid--1X2">
-                    <div class="testimonial__image-container">
-                        <img class="testimonial__image" src="/Images/testimonial.jpg" alt="A happy smiling customer">
-                        <span class="icon-container testimonial__image-quote icon-container--accent">
-                            <svg class="icon icon--white icon--small">
-                                <use xlink:href="images/sprite.svg#quotes"></use>
-                            </svg>
-                        </span>
-                    </div>
-                    <blockquote class="quote">
-                        <p class="quote__text">Using this cloud-hosting website has been a fantastic experience! The setup was seamless, and the performance has exceeded my expectations. My website runs faster and more reliably than ever before, and the customer support team is always ready to help with any questions. I’m thrilled with the uptime and security features—it gives me peace of mind knowing my site is in good hands. Highly recommend this service to anyone looking for reliable cloud hosting!</p>
-                        <footer>
-                            <div class="media">
-                                <div class="media__image">
-                                    <svg class="icon icon--primary quote__line">
-                                        <use xlink:href="images/sprite.svg#line"></use>
-                                    </svg>
-                                </div>
-                                <div class="media__body">
-                                    <h3 class="media__title quote__author">John Smith</h3>
-                                    <p class="quote__organazation">ABC Company</p>
-                                </div>
-                            </div>
-                        </footer>
-                    </blockquote>
+      <header class="block__header">
+        <h2>What Our Customers are Saying</h2>
+        <p>
+          Here’s what our customers are saying. We help websites grow and
+          perform better every day!
+        </p>
+      </header>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid--1X2">
+            <div class="testimonial__image-container">
+              <img
+                class="testimonial__image"
+                src="/Images/testimonial.jpg"
+                alt="A happy smiling customer" />
+              <span
+                class="icon-container testimonial__image-quote icon-container--accent">
+                <svg class="icon icon--white icon--small">
+                  <use xlink:href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+            </div>
+            <blockquote class="quote">
+              <p class="quote__text">
+                Using this cloud-hosting website has been a fantastic
+                experience! The setup was seamless, and the performance has
+                exceeded my expectations. My website runs faster and more
+                reliably than ever before, and the customer support team is
+                always ready to help with any questions. I’m thrilled with the
+                uptime and security features—it gives me peace of mind knowing
+                my site is in good hands. Highly recommend this service to
+                anyone looking for reliable cloud hosting!
+              </p>
+              <footer>
+                <div class="media">
+                  <div class="media__image">
+                    <svg class="icon icon--primary quote__line">
+                      <use xlink:href="images/sprite.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title quote__author">John Smith</h3>
+                    <p class="quote__organazation">ABC Company</p>
+                  </div>
                 </div>
-               </div>
+              </footer>
+            </blockquote>
+          </div>
         </div>
+      </div>
     </section>
 
     <div class="callout callout--primary">
-        <div class="grid grid--1X2">
-            <div class="callout__content">
-                <h2 class="callout__heading" >Ready to Get Started?</h2>
-                <p> Sign up now and launch your website with fast, reliable cloud hosting. Enjoy simple setup, expert support, and all the tools you need to grow and succeed online.</p>
-            </div>
-            <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+      <div class="grid grid--1X2">
+        <div class="callout__content">
+          <h2 class="callout__heading">Ready to Get Started?</h2>
+          <p>
+            Sign up now and launch your website with fast, reliable cloud
+            hosting. Enjoy simple setup, expert support, and all the tools you
+            need to grow and succeed online.
+          </p>
         </div>
+        <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+      </div>
     </div>
 
-
     <footer class="block block--dark footer">
-        <div class="container grid footer__sections">
-            <section class="collapsible collapsible--expanded footer__section">
-                <div class="collapsible__header">
-                    <h2 class="collapsible__heading block__heading footer__header">Products</h2>
-                    <img class="icon icon--white collapsible__chevron" src="/Images/chevron.svg" alt="">
-                </div>
-                <div class="collapsible__content">
-                    <ul class="list">
-                        <a href="#"><li>Website Hosting</li></a>
-                        <a href="#"><li>Free Automated Wordpress</li></a>
-                        <a href="#"><li>Migrations</li></a>
-                    </ul>
-                </div>
-            </section>
-    
-            <section class="collapsible footer__section">
-                <div class="collapsible__header">
-                    <h2 class="collapsible__heading block__heading footer__header">Company</h2>
-                    <img class="icon icon--white collapsible__chevron" src="/Images/chevron.svg" alt="">
-                </div>
-                <div class="collapsible__content">
-                    <ul class="list">
-                        <a href="#"><li>About</li></a>
-                        <a href="#"><li>Affiliates</li></a>
-                        <a href="#"><li>Blog</li></a>
-                        
-                    </ul>
-                </div>
-            </section>
-    
-            <section class="collapsible footer__section">
-                <div class="collapsible__header">
-                    <h2 class="collapsible__heading block__heading footer__header">Support</h2>
-                    <img class="icon icon--white collapsible__chevron" src="/Images/chevron.svg" alt="">
-                </div>
-                <div class="collapsible__content">
-                    <ul class="list">
-                        <a href="/contact.html"><li>Contact</li></a>
-                        <a href="#"><li>Support Knowlege</li></a>
-                        <a href="#"><li>FAQ</li></a>
-                    </ul>
-                </div>
-            </section>
-    
-            <section class="collapsible footer__section">
-                <div class="collapsible__header">
-                    <h2 class="collapsible__heading block__heading footer__header">Domains</h2>
-                    <img class="icon icon--white collapsible__chevron" src="/Images/chevron.svg" alt="">
-                </div>
-                <div class="collapsible__content">
-                    <ul class="list">
-                        <a href="#"><li>Domian Checker</li></a>
-                        <a href="#"><li>Domian Transfer</li></a>
-                        <a href="#"><li>Free Domain</li></a>
-                    </ul>
-                </div>
-            </section>
-    
-            <div class="footer__brand">
-                <img src="/Images/logo.svg" alt="">
-                <!-- <p class="footer__copyright">Copyright 2025 Nenye Okanumee</p> -->
-                <p class="footer__copyright">&copy; <span id="current-year"></span> Nenye Okanumee. All rights reserved.</p>
-            </div>
-    
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading block__heading footer__header">
+              Products
+            </h2>
+            <img
+              class="icon icon--white collapsible__chevron"
+              src="/Images/chevron.svg"
+              alt="" />
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <a href="#"><li>Website Hosting</li></a>
+              <a href="#"><li>Free Automated Wordpress</li></a>
+              <a href="#"><li>Migrations</li></a>
+            </ul>
+          </div>
+        </section>
+
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading block__heading footer__header">
+              Company
+            </h2>
+            <img
+              class="icon icon--white collapsible__chevron"
+              src="/Images/chevron.svg"
+              alt="" />
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <a href="#"><li>About</li></a>
+              <a href="#"><li>Affiliates</li></a>
+              <a href="#"><li>Blog</li></a>
+            </ul>
+          </div>
+        </section>
+
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading block__heading footer__header">
+              Support
+            </h2>
+            <img
+              class="icon icon--white collapsible__chevron"
+              src="/Images/chevron.svg"
+              alt="" />
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <a href="/contact.html"><li>Contact</li></a>
+              <a href="#"><li>Support Knowlege</li></a>
+              <a href="#"><li>FAQ</li></a>
+            </ul>
+          </div>
+        </section>
+
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading block__heading footer__header">
+              Domains
+            </h2>
+            <img
+              class="icon icon--white collapsible__chevron"
+              src="/Images/chevron.svg"
+              alt="" />
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <a href="#"><li>Domian Checker</li></a>
+              <a href="#"><li>Domian Transfer</li></a>
+              <a href="#"><li>Free Domain</li></a>
+            </ul>
+          </div>
+        </section>
+
+        <div class="footer__brand">
+          <img src="/Images/logo.svg" alt="" />
+          <!-- <p class="footer__copyright">Copyright 2025 Nenye Okanumee</p> -->
+          <p class="footer__copyright">
+            &copy; <span id="current-year"></span> Nenye Okanumee. All rights
+            reserved.
+          </p>
         </div>
+      </div>
     </footer>
-        
-        <script src="/js/main.js"></script>
-</body>
+
+    <script src="/js/main.js"></script>
+  </body>
 </html>
